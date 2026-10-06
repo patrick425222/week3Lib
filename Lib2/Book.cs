@@ -17,8 +17,20 @@ namespace Lib2
         public string Title
         {
             get { return _title; }
-            set { _title = value; }
-        }
+            set
+            {
+                // Check if any incoming char is a digit
+                if (!value.Any(char.IsDigit))
+                {
+                    _title = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Title cannot contain numbers.");
+                }
+
+            }
+            }
 
         public string Author
         {

@@ -1,6 +1,6 @@
 ﻿using Lib2;
 
-Book book = new Book("C# for beginners", "Steve Bills", 12345678);
+Book book = new Book("C# for b1ginners", "Steve Bills", 12345678);
         
 // This is info for the book class
 
