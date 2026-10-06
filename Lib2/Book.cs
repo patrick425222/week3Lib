@@ -10,6 +10,14 @@ namespace Lib2
         public string Author;
         public int ISBN;
 
+        // Parameterized constructor
+        public Book(string booktitle, string bookauthor, int bookisbn)
+        {
+            Title = booktitle;
+            Author = bookauthor;
+            ISBN = bookisbn;
+        }
+
         public void DisplayInfo()
         {
             Console.WriteLine($"Book Title: {Title}");
